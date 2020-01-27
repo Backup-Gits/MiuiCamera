@@ -26,4 +26,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MiuiCamera
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.shutter_sound.blacklist=com.android.camera
+
 endif
