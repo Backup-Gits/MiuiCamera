@@ -39,10 +39,6 @@
     <bool name="support_camera_record_location">true</bool>
     <!--whether support time watermark in camera-->
     <bool name="support_camera_water_mark">true</bool>
-    <!--whether support new style time watermark in camera-->
-    <bool name="support_camera_new_style_time_water_mark">true</bool>
-    <!--whether support face info watermark in camera-->
-    <bool name="support_camera_face_info_water_mark">true</bool>
     <!--whether support square mode in camera-->
     <bool name="support_camera_square_mode">true</bool>
     <!--whether support pause recording in camera-->
@@ -127,19 +123,12 @@
     <bool name="is_support_optical_zoom">true</bool>
     <!--whether support portrait in camera-->
     <bool name="is_support_portrait">true</bool>
-    <!--whether support add watermark on bottom left of picture-->
-    <bool name="support_picture_watermark">true</bool>
     <!--whether sensor_has_latency-->
     <bool name="sensor_has_latency">true</bool>
     <!--whether front camera support bokeh or not-->
     <bool name="support_front_bokeh">true</bool>
     <!--whether camera support portrait mode switch -->
     <bool name="camera_is_support_portrait_switch">true</bool>
-    <!-- fingerprint navigation event name list -->
-    <string-array name="fp_nav_event_name_list">
-        <item>uinput-fpc</item>
-        <item>uinput-goodix</item>
-    </string-array>
     <!-- High frame video record -->
     <bool name="support_camera_hfr_bitrate_scale">true</bool>
     <integer name="support_camera_hfr_max_quality">3</integer>
