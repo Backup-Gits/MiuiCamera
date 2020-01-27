@@ -14,7 +14,7 @@
 
 ifeq ($(TARGET_DEVICE),$(filter $(TARGET_DEVICE),sakura))
 
-VENDOR_PATH := vendor/apps/MiuiCamera
+VENDOR_PATH := vendor/xiaomi/MiuiCamera
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc,system/etc) \
