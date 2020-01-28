@@ -12,14 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(TARGET_DEVICE),$(filter $(TARGET_DEVICE),sakura))
-
 VENDOR_PATH := vendor/xiaomi/MiuiCamera
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc,system/etc) \
     $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/lib,system/lib) \
     $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/lib64,system/lib64) \
+    $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/priv-app,system/priv-app) \
     $(call find-copy-subdir-files,*,$(VENDOR_PATH)/vendor/etc,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # MiuiCamera
@@ -28,5 +27,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.shutter_sound.blacklist=com.android.camera
-
-endif
